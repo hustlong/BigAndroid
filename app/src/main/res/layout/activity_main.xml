@@ -16,4 +16,18 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <cc.biglong.bigandroid.widget.CircleProgress
+        android:id="@+id/circle1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        tools:layout_editor_absoluteY="16dp"
+        tools:layout_editor_absoluteX="142dp"/>
+
+    <cc.biglong.bigandroid.widget.CircleProgress
+        android:id="@+id/circleProgress"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        tools:layout_editor_absoluteY="16dp"
+        tools:layout_editor_absoluteX="16dp"/>
+
 </android.support.constraint.ConstraintLayout>
