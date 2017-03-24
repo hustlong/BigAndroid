@@ -92,8 +92,20 @@ public class CircleProgress extends View {
         progressPaint.setStrokeWidth(thickness);
     }
 
+    private void beforeDraw() {
+        int ringRadius = (minWidth- (int) thickness)/2;
+        ringRectF.set(-ringRadius,-ringRadius,ringRadius,ringRadius);
+        textWidth = FontUtil.getFontLength(textPaint,centerText);
+        textHeight = FontUtil.getFontHeight(textPaint);
+
+        hintPaint.setStrokeWidth(thickness);
+        progressPaint.setStrokeWidth(thickness);
+    }
+
     @Override
     protected void onDraw(Canvas canvas) {
+        beforeDraw();
+
         canvas.translate(minWidth*0.5f,minWidth*0.5f);
         canvas.drawOval(ringRectF, hintPaint);
         canvas.drawArc(ringRectF,-90.0f,360.0f* progress /max,false, progressPaint);
@@ -106,12 +118,6 @@ public class CircleProgress extends View {
         int heightSize = MeasureSpec.getSize(heightMeasureSpec);
         minWidth = Math.min(widthSize, heightSize);
         setMeasuredDimension(minWidth, minWidth);
-
-        int ringRadius = (minWidth- (int) thickness)/2;
-        ringRectF.set(-ringRadius,-ringRadius,ringRadius,ringRadius);
-
-        textWidth = FontUtil.getFontLength(textPaint,centerText);
-        textHeight = FontUtil.getFontHeight(textPaint);
     }
 
 
