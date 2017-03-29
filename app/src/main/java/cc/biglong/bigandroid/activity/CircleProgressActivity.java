@@ -1,4 +1,4 @@
-package cc.biglong.bigandroid;
+package cc.biglong.bigandroid.activity;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -6,9 +6,10 @@ import android.widget.SeekBar;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
+import cc.biglong.bigandroid.R;
 import cc.biglong.bigandroid.widget.CircleProgress;
 
-public class MainActivity extends AppCompatActivity implements SeekBar.OnSeekBarChangeListener {
+public class CircleProgressActivity extends AppCompatActivity implements SeekBar.OnSeekBarChangeListener {
 
     @BindView(R.id.circleProgress1)
     CircleProgress mCircleProgress1;
@@ -22,7 +23,7 @@ public class MainActivity extends AppCompatActivity implements SeekBar.OnSeekBar
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_circle_progress);
         ButterKnife.bind(this);
 
         initViews();
