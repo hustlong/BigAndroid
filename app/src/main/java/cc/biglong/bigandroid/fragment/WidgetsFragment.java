@@ -18,6 +18,7 @@ import butterknife.ButterKnife;
 import butterknife.Unbinder;
 import cc.biglong.bigandroid.activity.CircleProgressActivity;
 import cc.biglong.bigandroid.R;
+import cc.biglong.bigandroid.activity.ColorsFlowCircleActivity;
 import cc.biglong.bigandroid.adapter.WidgetsAdapter;
 import cc.biglong.bigandroid.entity.WidgetInfo;
 
@@ -82,6 +83,7 @@ public class WidgetsFragment extends Fragment implements WidgetsAdapter.OnItemCl
                 startActivity(new Intent(getContext(),CircleProgressActivity.class));
                 break;
             case 1:
+                startActivity(new Intent(getContext(),ColorsFlowCircleActivity.class));
                 break;
         }
     }
