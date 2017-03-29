@@ -36,7 +36,7 @@ dependencies {
     apt 'com.jakewharton:butterknife-compiler:8.4.0'
 
     /**
-     * Support
+     * Support 库
      */
     compile rootProject.ext.dependencies["recyclerview-v7"]
     compile rootProject.ext.dependencies["design"]
