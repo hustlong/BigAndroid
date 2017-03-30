@@ -21,26 +21,23 @@ android {
 }
 
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile fileTree(include: ['*.jar'], dir: 'libs')
     androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
     compile 'com.android.support:appcompat-v7:25.2.0'
     compile 'com.android.support.constraint:constraint-layout:1.0.2'
     testCompile 'junit:junit:4.12'
-
     /**
      * 控件注入绑定 ButterKnife
      */
     compile 'com.jakewharton:butterknife:8.4.0'
     apt 'com.jakewharton:butterknife-compiler:8.4.0'
-
     /**
      * Support 库
      */
     compile rootProject.ext.dependencies["recyclerview-v7"]
     compile rootProject.ext.dependencies["design"]
-
     /**
      * 网络请求框架 Retrofit + RxJava + RxAndroid
      */
@@ -51,7 +48,6 @@ dependencies {
     compile 'com.squareup.retrofit2:adapter-rxjava:2.1.0'
     compile 'io.reactivex:rxandroid:1.2.1'
     compile 'io.reactivex:rxjava:1.1.6'
-
     /**
      * 图片加载缓存框架
      */

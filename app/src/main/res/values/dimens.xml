@@ -5,7 +5,6 @@
 
     <!-- Standart dimens for the color wheel -->
     <dimen name="color_wheel_radius">124dp</dimen>
-    <dimen name="color_wheel_thickness">8dp</dimen>
-
+    <dimen name="color_wheel_thickness">12dp</dimen>
 
 </resources>

@@ -33,3 +33,22 @@
 
 ![CircleProgress](gif/circle_progress.gif)
 
+
+### 彩虹环自转动画
+目前可以设置颜色、自转速度
+
+* xml中使用方法
+```
+<cc.biglong.bigandroid.widget.ColorsFlowCircle
+        android:id="@+id/flow"
+        android:layout_width="240dp"
+        android:layout_height="240dp"/>
+````
+
+* java 设置属性
+```
+mFlow.setColors(mColors); //设置颜色组，数量不限
+mFlow.setAnimDuration(3000); //设置自转一圈时间，毫秒
+```
+
+![ColorsFlowCircle](gif/colors_flow_circle.gif)
