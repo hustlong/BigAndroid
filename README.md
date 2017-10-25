@@ -2,7 +2,7 @@
 >项目需求中遇到的android小组件，选择一部分开源，慢慢积累吧！
 
 ### 预览
-![预览截图](gif/device-2017-10-25-164535.png)
+<div align=center><img width=50% src="https://github.com/hustlong/BigAndroid/raw/master/gif/device-2017-10-25-164535.png"/></div>
 
 [apk下载](https://github.com/hustlong/BigAndroid/raw/master/gif/app-debug.apk)
 
