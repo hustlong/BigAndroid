@@ -21,7 +21,6 @@ public class ColorsFlowCircleActivity extends BaseActivity implements SeekBar.On
     @BindView(R.id.seekBar)
     SeekBar mSeekBar;
 
-    int mSelectedColor;
     private final static int[] mColors = new int[] {Color.RED,Color.BLUE,Color.GREEN,Color.CYAN,Color.GRAY,Color.YELLOW};
 
     @Override

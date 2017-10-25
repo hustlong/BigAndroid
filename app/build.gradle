@@ -1,5 +1,4 @@
 apply plugin: 'com.android.application'
-apply plugin: 'android-apt'
 
 android {
     compileSdkVersion rootProject.ext.android["compileSdkVersion"]
@@ -32,7 +31,7 @@ dependencies {
      * 控件注入绑定 ButterKnife
      */
     compile 'com.jakewharton:butterknife:8.4.0'
-    apt 'com.jakewharton:butterknife-compiler:8.4.0'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.4.0'
     /**
      * Support 库
      */
@@ -41,7 +40,6 @@ dependencies {
     /**
      * 网络请求框架 Retrofit + RxJava + RxAndroid
      */
-    compile files('libs/httpclient.jar')
     compile 'com.squareup.retrofit2:retrofit:2.1.0'
     compile 'com.squareup.okhttp3:logging-interceptor:3.3.1'
     compile 'com.squareup.retrofit2:converter-gson:2.1.0'

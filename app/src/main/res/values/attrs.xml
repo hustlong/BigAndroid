@@ -17,4 +17,11 @@
         <attr name="color_wheel_radius" format="dimension" />
         <attr name="color_wheel_thickness" format="dimension" />
     </declare-styleable>
+
+
+    <declare-styleable name="DimmerIndicator">
+        <attr name="dimmer_color" format="color"/>
+        <attr name="dimmer_color_dark" format="color"/>
+        <attr name="dimmer_thickness" format="dimension"/>
+    </declare-styleable>
 </resources>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ProgressRingView">
+        <attr name="ProgressRingduration" format="integer"/>
+        <attr name="ProgressRingcolor" format="color"/>
+        <attr name="ProgressRingradius" format="dimension" />
+        <attr name="ProgressRingthickness" format="dimension" />
+    </declare-styleable>
+</resources>

@@ -19,6 +19,8 @@ import butterknife.Unbinder;
 import cc.biglong.bigandroid.activity.CircleProgressActivity;
 import cc.biglong.bigandroid.R;
 import cc.biglong.bigandroid.activity.ColorsFlowCircleActivity;
+import cc.biglong.bigandroid.activity.ProgressRingActivity;
+import cc.biglong.bigandroid.activity.SlideVerticalBarActivity;
 import cc.biglong.bigandroid.adapter.WidgetsAdapter;
 import cc.biglong.bigandroid.entity.WidgetInfo;
 
@@ -36,7 +38,7 @@ public class WidgetsFragment extends Fragment implements WidgetsAdapter.OnItemCl
 
     private List<WidgetInfo> INFO_LIST;
 
-    private final static int COLUMN = 1;
+    private final static int COLUMN = 2;
 
     public static WidgetsFragment newInstance(String info) {
         Bundle args = new Bundle();
@@ -61,6 +63,8 @@ public class WidgetsFragment extends Fragment implements WidgetsAdapter.OnItemCl
         INFO_LIST = new ArrayList<>();
         INFO_LIST.add(new WidgetInfo(R.drawable.ic_circle_progress,"圆环进度指示器"));
         INFO_LIST.add(new WidgetInfo(R.drawable.ic_colors_flow,"彩色圆环转圈动画"));
+        INFO_LIST.add(new WidgetInfo(R.drawable.ic_refresh,"渐变圆环加载动画"));
+        INFO_LIST.add(new WidgetInfo(R.drawable.ic_sunlight,"模仿iOS的亮度调节交互"));
 
         mWidgetsAdapter = new WidgetsAdapter(getActivity(),this);
         GridLayoutManager manager = new GridLayoutManager(getActivity(), COLUMN);
@@ -84,6 +88,12 @@ public class WidgetsFragment extends Fragment implements WidgetsAdapter.OnItemCl
                 break;
             case 1:
                 startActivity(new Intent(getContext(),ColorsFlowCircleActivity.class));
+                break;
+            case 2:
+                startActivity(new Intent(getContext(),ProgressRingActivity.class));
+                break;
+            case 3:
+                startActivity(new Intent(getContext(),SlideVerticalBarActivity.class));
                 break;
         }
     }
