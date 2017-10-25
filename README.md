@@ -1,25 +1,29 @@
 # BigAndroid
 >项目需求中遇到的android小组件，选择一部分开源，慢慢积累吧！
 
-### 预览
+## 预览
 <div align=center><img width=50% src="https://github.com/hustlong/BigAndroid/raw/master/gif/device-2017-10-25-164535.png"/></div>
 
 [apk下载](https://github.com/hustlong/BigAndroid/raw/master/gif/app-debug.apk)
 
-### 模仿iOS的亮度调节交互
+## 模仿iOS的亮度调节交互
 ![亮度调节](gif/ios_lightness.gif)
 
 [组件源码：垂直滑动进度条](app/src/main/java/cc/biglong/bigandroid/widget/SlideVerticalBar.java)
 
 [组件源码：圆形亮度指示器](app/src/main/java/cc/biglong/bigandroid/widget/DimmerIndicator.java)
 
-### 渐变圆环加载动画
+## 渐变圆环加载动画
 ![加载动画](gif/progress_ring_anim.gif)
 
 [组件源码](app/src/main/java/cc/biglong/bigandroid/widget/ProgressRingView.java)
 
-### 可以显示进度的圆形指示器
+
+
+## 可以显示进度的圆形指示器
 没时间去做更炫酷的显示效果，先这样。
+
+[组件源码](app/src/main/java/cc/biglong/bigandroid/widget/CircleProgress.java)
 
 * 使用方法
 
@@ -51,8 +55,10 @@
 ![CircleProgress](gif/circle_progress.gif)
 
 
-### 彩虹环自转动画
+## 彩虹环自转动画
 目前可以设置颜色、自转速度
+
+[组件源码](app/src/main/java/cc/biglong/bigandroid/widget/ColorsFlowCircle.java)
 
 * xml中使用方法
 ```
